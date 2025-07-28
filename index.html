@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @keyframes slider {
+            0%, 33% {
+              background-image: url(./img/1000166566.jpg);
+             --text-description: "Hora do lanche!"
+            }
+            34%, 66% {
+            background-image: url(./img/1000166567.jpg);
+             --text-description: "Quadra poliesportiva dos finais de semana!"
+            }
+            67%, 100% {
+            background-image: url(./img/image.png);
+            --text-description: "Área de descanso ápos um dia de estudo!"
+            }
+        }
+        @keyframes fade {
+            0% {
+            opacity: 0;
+            }
+            15%, 85% {
+            opacity: 1;
+            }
+            100% {
+            opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0003] place-items-center h-full">
+    <div class="relative h-[80%] w-[80%] rounded-xl shadow-[0_0px_16px_rgba(0,0,0,0.25)] bg-center bg-cover overflow-hidden animate-[slider_12s_fade_4s_infinite] after:absolute after:-(--text-description) after:bottom-0 after:text-center after:w-full after:py-[16px] after:bg-[#0009] after:text-[#fff] after:text-base after:font-sans"></div>
+</body>
+</html>
